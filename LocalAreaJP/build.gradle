@@ -1,0 +1,34 @@
+apply plugin: 'android-library'
+
+def libraryVersionName = '0.1'
+
+android {
+    compileSdkVersion 19
+    buildToolsVersion "19.0.2"
+
+    defaultConfig {
+        minSdkVersion 8
+        targetSdkVersion 19
+        versionCode 1
+        versionName libraryVersionName
+    }
+
+    release {
+        runProguard false
+        proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.txt'
+    }
+}
+
+apply plugin: 'maven'
+
+def deployTo = new File(rootDir, "repository")
+uploadArchives {
+    repositories {
+        mavenDeployer {
+            repository(url: "file://${deployTo}")
+            pom.version = libraryVersionName
+            pom.groupId = 'net.ichigotake.localarea'
+            pom.artifactId = 'localarea-jp'
+        }
+    }
+}
