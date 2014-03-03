@@ -13,7 +13,7 @@ repositories {
 }
 
 dependencies {
-    compile 'net.ichigotake.localarea:localarea-jp:0.1'
+    compile 'net.ichigotake.localarea:localarea-jp:0.2'
 }
 ```
 

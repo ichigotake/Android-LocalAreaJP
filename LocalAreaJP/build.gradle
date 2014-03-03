@@ -1,6 +1,7 @@
 apply plugin: 'android-library'
 
-def libraryVersionName = '0.1'
+def libraryVersionCode = 2
+def libraryVersionName = '0.2'
 
 android {
     compileSdkVersion 19
@@ -9,7 +10,7 @@ android {
     defaultConfig {
         minSdkVersion 8
         targetSdkVersion 19
-        versionCode 1
+        versionCode libraryVersionCode
         versionName libraryVersionName
     }
 
