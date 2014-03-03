@@ -1,7 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <!--
+        命名規則
 
-    <string-array name="region_jp_iso3166_2">
+        ${name}: 「兵庫」「岐阜」など、行政機関名を含まない略称
+        ${name}_full_name: 「xx県」「oo府」など、正式名称を全て含む
+     -->
+
+    <string-array name="region_jp_iso3166_2_full_name">
         <item >北海道</item>
         <item >青森県</item>
         <item >岩手県</item>
@@ -51,7 +57,57 @@
         <item >沖縄県</item>
     </string-array>
 
-    <string-array name="regions_jp">
+    <string-array name="region_jp_iso3166_2">
+        <item >北海道</item>
+        <item >青森</item>
+        <item >岩手</item>
+        <item >宮城</item>
+        <item >秋田</item>
+        <item >山形</item>
+        <item >福島</item>
+        <item >茨城</item>
+        <item >栃木</item>
+        <item >群馬</item>
+        <item >埼玉</item>
+        <item >千葉</item>
+        <item >東京</item>
+        <item >神奈川</item>
+        <item >新潟</item>
+        <item >富山</item>
+        <item >石川</item>
+        <item >福井</item>
+        <item >山梨</item>
+        <item >長野</item>
+        <item >岐阜</item>
+        <item >静岡</item>
+        <item >愛知</item>
+        <item >三重</item>
+        <item >滋賀</item>
+        <item >京都</item>
+        <item >大阪</item>
+        <item >兵庫</item>
+        <item >奈良</item>
+        <item >和歌山</item>
+        <item >鳥取</item>
+        <item >島根</item>
+        <item >岡山</item>
+        <item >広島</item>
+        <item >山口</item>
+        <item >徳島</item>
+        <item >香川</item>
+        <item >愛媛</item>
+        <item >高知</item>
+        <item >福岡</item>
+        <item >佐賀</item>
+        <item >長崎</item>
+        <item >熊本</item>
+        <item >大分</item>
+        <item >宮崎</item>
+        <item >鹿児島</item>
+        <item >沖縄</item>
+    </string-array>
+
+    <string-array name="regions_jp_full_name">
         <item >北海道地方</item>
         <item >東北地方</item>
         <item >関東地方</item>
@@ -63,11 +119,42 @@
         <item >沖縄地方</item>
     </string-array>
 
-    <string-array name="region_jp_hokkaido">
+    <string-array name="regions_jp">
+        <item >北海道</item>
+        <item >東北</item>
+        <item >関東</item>
+        <item >中部</item>
+        <item >近畿</item>
+        <item >中国</item>
+        <item >四国</item>
+        <item >九州</item>
+        <item >沖縄</item>
+    </string-array>
+
+    <string-array name="region_jp_hokkaido_full_name">
         <item >北海道</item>
     </string-array>
 
+    <string-array name="region_jp_touhoku_full_name">
+        <item >青森県</item>
+        <item >岩手県</item>
+        <item >宮城県</item>
+        <item >秋田県</item>
+        <item >山形県</item>
+        <item >福島県</item>
+    </string-array>
+
     <string-array name="region_jp_touhoku">
+        <item >青森</item>
+        <item >岩手</item>
+        <item >宮城</item>
+        <item >秋田</item>
+        <item >山形</item>
+        <item >福島</item>
+    </string-array>
+
+    <string-array name="region_jp_hokkaido_touhoku_full_name">
+        <item >北海道</item>
         <item >青森県</item>
         <item >岩手県</item>
         <item >宮城県</item>
@@ -78,15 +165,15 @@
 
     <string-array name="region_jp_hokkaido_touhoku">
         <item >北海道</item>
-        <item >青森県</item>
-        <item >岩手県</item>
-        <item >宮城県</item>
-        <item >秋田県</item>
-        <item >山形県</item>
-        <item >福島県</item>
+        <item >青森</item>
+        <item >岩手</item>
+        <item >宮城</item>
+        <item >秋田</item>
+        <item >山形</item>
+        <item >福島</item>
     </string-array>
 
-    <string-array name="region_jp_kantou">
+    <string-array name="region_jp_kantou_full_name">
         <item >茨城県</item>
         <item >栃木県</item>
         <item >群馬県</item>
@@ -96,7 +183,17 @@
         <item >神奈川県</item>
     </string-array>
 
-    <string-array name="region_jp_chubu">
+    <string-array name="region_jp_kantou">
+        <item >茨城</item>
+        <item >栃木</item>
+        <item >群馬</item>
+        <item >埼玉</item>
+        <item >千葉</item>
+        <item >東京</item>
+        <item >神奈川</item>
+    </string-array>
+
+    <string-array name="region_jp_chubu_full_name">
         <item >新潟県</item>
         <item >富山県</item>
         <item >石川県</item>
@@ -108,7 +205,19 @@
         <item >愛知県</item>
     </string-array>
 
-    <string-array name="region_jp_kinki">
+    <string-array name="region_jp_chubu">
+        <item >新潟</item>
+        <item >富山</item>
+        <item >石川</item>
+        <item >福井</item>
+        <item >山梨</item>
+        <item >長野</item>
+        <item >岐阜</item>
+        <item >静岡</item>
+        <item >愛知</item>
+    </string-array>
+
+    <string-array name="region_jp_kinki_full_name">
         <item >三重県</item>
         <item >滋賀県</item>
         <item >京都府</item>
@@ -118,7 +227,17 @@
         <item >和歌山県</item>
     </string-array>
 
-    <string-array name="region_jp_chugoku">
+    <string-array name="region_jp_kinki">
+        <item >三重</item>
+        <item >滋賀</item>
+        <item >京都</item>
+        <item >大阪</item>
+        <item >兵庫</item>
+        <item >奈良</item>
+        <item >和歌山</item>
+    </string-array>
+
+    <string-array name="region_jp_chugoku_full_name">
         <item >鳥取県</item>
         <item >島根県</item>
         <item >岡山県</item>
@@ -126,14 +245,29 @@
         <item >山口県</item>
     </string-array>
 
-    <string-array name="region_jp_shikoku">
+    <string-array name="region_jp_chugoku">
+        <item >鳥取</item>
+        <item >島根</item>
+        <item >岡山</item>
+        <item >広島</item>
+        <item >山口</item>
+    </string-array>
+
+    <string-array name="region_jp_shikoku_full_name">
         <item >徳島県</item>
         <item >香川県</item>
         <item >愛媛県</item>
         <item >高知県</item>
     </string-array>
 
-    <string-array name="region_jp_kyusyu">
+    <string-array name="region_jp_shikoku">
+        <item >徳島</item>
+        <item >香川</item>
+        <item >愛媛</item>
+        <item >高知</item>
+    </string-array>
+
+    <string-array name="region_jp_kyusyu_full_name">
         <item >福岡県</item>
         <item >佐賀県</item>
         <item >長崎県</item>
@@ -143,7 +277,17 @@
         <item >鹿児島県</item>
     </string-array>
 
-    <string-array name="region_jp_kyusyu_okinawa">
+    <string-array name="region_jp_kyusyu">
+        <item >福岡</item>
+        <item >佐賀</item>
+        <item >長崎</item>
+        <item >熊本</item>
+        <item >大分</item>
+        <item >宮崎</item>
+        <item >鹿児島</item>
+    </string-array>
+
+    <string-array name="region_jp_kyusyu_okinawa_full_name">
         <item >福岡県</item>
         <item >佐賀県</item>
         <item >長崎県</item>
@@ -151,11 +295,26 @@
         <item >大分県</item>
         <item >宮崎県</item>
         <item >鹿児島県</item>
+        <item >沖縄県</item>
+    </string-array>
+
+    <string-array name="region_jp_kyusyu_okinawa">
+        <item >福岡</item>
+        <item >佐賀</item>
+        <item >長崎</item>
+        <item >熊本</item>
+        <item >大分</item>
+        <item >宮崎</item>
+        <item >鹿児島</item>
+        <item >沖縄</item>
+    </string-array>
+
+    <string-array name="region_jp_okinawa_full_name">
         <item >沖縄県</item>
     </string-array>
 
     <string-array name="region_jp_okinawa">
-        <item >沖縄県</item>
+        <item >沖縄</item>
     </string-array>
 
 </resources>
