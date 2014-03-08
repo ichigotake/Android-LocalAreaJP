@@ -13,11 +13,6 @@ android {
         versionCode libraryVersionCode
         versionName libraryVersionName
     }
-
-    release {
-        runProguard false
-        proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.txt'
-    }
 }
 
 apply plugin: 'maven'
